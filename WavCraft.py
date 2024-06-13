@@ -32,8 +32,6 @@ if args.mode in ("basic", "inspiration"):
         start_time = time.time()
         session_id = pipeline.init_session(args.session_id)
         api_key = utils.get_api_key()
-
-        assert api_key != None, "Please set your openai_key in the environment variable."
         
         print(f"Session {session_id} is created.")
 
